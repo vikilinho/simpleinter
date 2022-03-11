@@ -42,6 +42,22 @@ class _SignupScreenState extends State<SignupScreen> {
                   Navigator.of(context).pushNamed('/');
                 },
               ),
+              Row(
+                children: [
+                  ElevatedButton(
+                    child: Text('English'),
+                    onPressed: () async {
+                      await context.setLocale(Locale("en"));
+                    },
+                  ),
+                  ElevatedButton(
+                    child: Text('German'),
+                    onPressed: () async {
+                      await context.setLocale(Locale("de"));
+                    },
+                  ),
+                ],
+              )
             ],
           ),
         ));

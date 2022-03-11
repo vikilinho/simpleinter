@@ -1,10 +1,10 @@
 // DO NOT EDIT. This is code generated via package:easy_localization/generate.dart
 
 abstract class  LocaleKeys {
-  static const Anmeldetitel = 'Anmeldetitel';
-  static const registrieren = 'registrieren';
-  static const benutzername = 'benutzername';
-  static const passwort = 'passwort';
+  static const logintitle = 'logintitle';
+  static const signuptitle = 'signuptitle';
+  static const username = 'username';
+  static const password = 'password';
   static const login = 'login';
 
 }

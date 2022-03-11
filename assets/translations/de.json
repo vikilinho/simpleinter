@@ -1,7 +1,7 @@
 {
-    "Anmeldetitel": "Anmeldung",
-    "registrieren": "Registrieren",
-    "benutzername": "Benutzername",
-    "passwort": "Passwort",
+    "logintitle": "Anmeldung",
+    "signuptitle": "Registrieren",
+    "username": "Benutzername",
+    "password": "Passwort",
     "login": "Einloggen"
 }

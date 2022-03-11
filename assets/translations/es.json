@@ -1,6 +1,6 @@
 {
-    "accesotitulo": "Acceso",
-    "Registrarsetitulo": "Registrarse",
+    "ogintitle": "Acceso",
+    "signuptitle": "Registrarse",
     "username": "Nombre de usuario",
     "password": "Contraseña",
     "login": "Iniciar sesión"

@@ -15,10 +15,10 @@ class CodegenLoader extends AssetLoader{
   }
 
   static const Map<String,dynamic> de = {
-  "Anmeldetitel": "Anmeldung",
-  "registrieren": "Registrieren",
-  "benutzername": "Benutzername",
-  "passwort": "Passwort",
+  "logintitle": "Anmeldung",
+  "signuptitle": "Registrieren",
+  "username": "Benutzername",
+  "password": "Passwort",
   "login": "Einloggen"
 };
 static const Map<String,dynamic> en = {
@@ -29,8 +29,8 @@ static const Map<String,dynamic> en = {
   "login": "Login"
 };
 static const Map<String,dynamic> es = {
-  "accesotitulo": "Acceso",
-  "Registrarsetitulo": "Registrarse",
+  "ogintitle": "Acceso",
+  "signuptitle": "Registrarse",
   "username": "Nombre de usuario",
   "password": "Contraseña",
   "login": "Iniciar sesión"

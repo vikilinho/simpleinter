@@ -12,6 +12,9 @@ class LoginScreen extends StatefulWidget {
 }
 
 class _LoginScreenState extends State<LoginScreen> {
+  bool isvisible = true;
+  bool isvisible1 = false;
+  bool isvisible2 = false;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -37,6 +40,34 @@ class _LoginScreenState extends State<LoginScreen> {
               Navigator.pushNamed(context, '/home');
             },
           ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              ElevatedButton(
+                child: Text('English'),
+                onPressed: () async {
+                  isvisible = false;
+                  await context.setLocale(Locale("en"));
+                },
+              ),
+              SizedBox(width: 10),
+              ElevatedButton(
+                child: Text('Spanish'),
+                onPressed: () async {
+                  isvisible = false;
+                  await context.setLocale(Locale("es"));
+                },
+              ),
+              SizedBox(width: 10),
+              ElevatedButton(
+                child: Text('German'),
+                onPressed: () async {
+                  isvisible = false;
+                  await context.setLocale(Locale("de"));
+                },
+              ),
+            ],
+          )
         ],
       ),
     );

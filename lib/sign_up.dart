@@ -16,30 +16,32 @@ class _SignupScreenState extends State<SignupScreen> {
         appBar: AppBar(
           title: Text('Signup'),
         ),
-        body: Column(
-          children: [
-            TextField(
-              decoration: InputDecoration(
-                hintText: 'Enter your name',
+        body: Center(
+          child: Column(
+            children: [
+              TextField(
+                decoration: InputDecoration(
+                  hintText: 'Enter your name',
+                ),
               ),
-            ),
-            TextField(
-              decoration: InputDecoration(
-                hintText: 'Enter your email',
+              TextField(
+                decoration: InputDecoration(
+                  hintText: 'Enter your email',
+                ),
               ),
-            ),
-            TextField(
-              decoration: InputDecoration(
-                hintText: 'Enter your password',
+              TextField(
+                decoration: InputDecoration(
+                  hintText: 'Enter your password',
+                ),
               ),
-            ),
-            ElevatedButton(
-              child: Text('Signup'),
-              onPressed: () {
-                Navigator.of(context).pushNamed('/');
-              },
-            ),
-          ],
+              ElevatedButton(
+                child: Text('Signup'),
+                onPressed: () {
+                  Navigator.of(context).pushNamed('/');
+                },
+              ),
+            ],
+          ),
         ));
   }
 }

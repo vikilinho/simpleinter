@@ -16,25 +16,27 @@ class _LoginScreenState extends State<LoginScreen> {
       appBar: AppBar(
         title: Text('Login'),
       ),
-      body: Column(
-        children: [
-          TextField(
-            decoration: InputDecoration(
-              hintText: 'Username',
+      body: Center(
+        child: Column(
+          children: [
+            TextField(
+              decoration: InputDecoration(
+                hintText: 'Username',
+              ),
             ),
-          ),
-          TextField(
-            decoration: InputDecoration(
-              hintText: 'Password',
+            TextField(
+              decoration: InputDecoration(
+                hintText: 'Password',
+              ),
             ),
-          ),
-          ElevatedButton(
-            child: Text('Login'),
-            onPressed: () {
-              Navigator.pushNamed(context, '/home');
-            },
-          ),
-        ],
+            ElevatedButton(
+              child: Text('Login'),
+              onPressed: () {
+                Navigator.pushNamed(context, '/home');
+              },
+            ),
+          ],
+        ),
       ),
     );
   }
